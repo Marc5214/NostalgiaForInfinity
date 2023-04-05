@@ -9,8 +9,8 @@
 #!/bin/bash
 
 ROOT_PATH="Your root path f.e. (/home/user"
-NFI_PATH="${ROOT_PATH}/NFI/NostalgiaForInfinityX.py"
-FT_PATH="${ROOT_PATH}/ft_userdata/user_data/strategies/NostalgiaForInfinityX.py"
+NFI_PATH="${ROOT_PATH}/NFI/NostalgiaForInfinityX2.py"
+FT_PATH="${ROOT_PATH}/ft_userdata/user_data/strategies/NostalgiaForInfinityX2.py"
 TG_TOKEN=""
 TG_CHAT_ID=""
 GIT_URL="https://github.com/iterativv/NostalgiaForInfinity"

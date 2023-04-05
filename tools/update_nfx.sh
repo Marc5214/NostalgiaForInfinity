@@ -14,7 +14,7 @@ url=$(curl -s ${url_nfi} | grep -o '"tarball_url": ".*"' | sed 's/"tarball_url":
 folder_name=/tmp/nfx_${version}_${random_hash}
 mkdir -p ${folder_name}
 curl -s -L $url | tar xz -C ${folder_name} --strip-components 1
-cp ${folder_name}/NostalgiaForInfinityX.py ${bot_strategy_path}/NostalgiaForInfinityX.py
+cp ${folder_name}/NostalgiaForInfinityX2.py ${bot_strategy_path}/NostalgiaForInfinityX2.py
 rm -rf ${folder_name}
 
 # Send message to telegram
@@ -22,7 +22,7 @@ curl -s -X "POST" "https://api.telegram.org/bot${telegram_token}/sendMessage" \
      -H 'Content-Type: application/json; charset=utf-8' \
      -d $'{
   "chat_id": "'$telegram_chat_id'",
-  "text": "<b>Update</b>\n<pre>Strategy <b>NostalgiaForInfinityX</b> has been updated to <b>'$version'</b>.</pre>",
+  "text": "<b>Update</b>\n<pre>Strategy <b>NostalgiaForInfinityX2</b> has been updated to <b>'$version'</b>.</pre>",
   "parse_mode": "HTML"
 }'
 

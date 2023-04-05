@@ -18,7 +18,7 @@ COMMIT_TO_LOCAL_REPO=true
 echo "updating NFO Strategy"
 cd $NFI_REPO_HOME
 git pull
-cp NostalgiaForInfinityX.py $FREQTRADE_HOME/user_data/strategies
+cp NostalgiaForInfinityX2.py $FREQTRADE_HOME/user_data/strategies
 echo "copied NFI Strategy to freqtrader"
 
 #optionally add the update strategy file to your own repo
@@ -32,7 +32,7 @@ if [ "$COMMIT_TO_LOCAL_REPO" = true ] ; then
 
     #commit update strategy file to local repo
     cd $FREQTRADE_HOME/user_data/strategies
-    git add NostalgiaForInfinityX.py
+    git add NostalgiaForInfinityX2.py
     git commit -m "updated nfix strategy"
     git push
 
